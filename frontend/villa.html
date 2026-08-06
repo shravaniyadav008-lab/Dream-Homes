@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Luxury Villas - Dream Homes</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Luxury Villas</h1>
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="properties.html">Properties</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="admin.html" class="active">Admin</a>
+            <a href="wishlist.html">❤️</a>
+            <a href="login.html" class="nav-btn login-btn">Login</a>
+            <a href="register.html" class="nav-btn register-btn">Register</a>
+        </nav>
+    </header>
+
+    <section class="properties">
+        <div class="property-container">
+
+            <!-- Card 1 -->
+            <div class="property-card">
+                <img src="images/villa1.jpg" alt="Royal Palm Villa">
+                <h3>Royal Palm Villa - Mumbai</h3>
+                <p>4 Bedrooms | 3 Bathrooms</p>
+                <p>2500 sqft</p>
+                <button onclick="toggleInfo('v1')">More Info</button>
+                <div class="more-info" id="v1">
+                    <p>Price: ₹3.5 Crore</p>
+                    <p>Parking Available</p>
+                    <p>Private Garden</p>
+                    <p>Swimming Pool</p>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="property-card">
+                <img src="images/villa2.jpg" alt="Green Valley Villa">
+                <h3>Green Valley Villa - Pune</h3>
+                <p>5 Bedrooms | 4 Bathrooms</p>
+                <p>3000 sqft</p>
+                <button onclick="toggleInfo('v2')">More Info</button>
+                <div class="more-info" id="v2">
+                    <p>Price: ₹4 Crore</p>
+                    <p>3 Car Parking</p>
+                    <p>Large Garden</p>
+                    <p>Fully Furnished</p>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="property-card">
+                <img src="images/villa3.jpg" alt="Sunset Villa">
+                <h3>Sunset Villa - Bangalore</h3>
+                <p>4 Bedrooms | 3 Bathrooms</p>
+                <p>2600 sqft</p>
+                <button onclick="toggleInfo('v3')">More Info</button>
+                <div class="more-info" id="v3">
+                    <p>Price: ₹3.8 Crore</p>
+                    <p>Private Pool</p>
+                    <p>Garden</p>
+                    <p>Premium Interior</p>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="property-card">
+                <img src="images/villa4.jpg" alt="Ocean View Villa">
+                <h3>Ocean View Villa - Goa</h3>
+                <p>3 Bedrooms | 2 Bathrooms</p>
+                <p>2200 sqft</p>
+                <button onclick="toggleInfo('v4')">More Info</button>
+                <div class="more-info" id="v4">
+                    <p>Price: ₹5 Crore</p>
+                    <p>Sea Facing</p>
+                    <p>Infinity Pool</p>
+                    <p>Private Lawn</p>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="property-card">
+                <img src="images/villa5.jpg" alt="Lake View Villa">
+                <h3>Lake View Villa - Udaipur</h3>
+                <p>4 Bedrooms | 4 Bathrooms</p>
+                <p>2800 sqft</p>
+                <button onclick="toggleInfo('v5')">More Info</button>
+                <div class="more-info" id="v5">
+                    <p>Price: ₹4.2 Crore</p>
+                    <p>Lake Facing</p>
+                    <p>Modular Kitchen</p>
+                    <p>2 Parking</p>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="property-card">
+                <img src="images/villa6.jpg" alt="Hilltop Villa">
+                <h3>Hilltop Villa - Lonavala</h3>
+                <p>3 Bedrooms | 3 Bathrooms</p>
+                <p>2400 sqft</p>
+                <button onclick="toggleInfo('v6')">More Info</button>
+                <div class="more-info" id="v6">
+                    <p>Price: ₹3 Crore</p>
+                    <p>Hill View</p>
+                    <p>Pool</p>
+                    <p>Garden</p>
+                </div>
+            </div>
+
+            <!-- Card 7 -->
+            <div class="property-card">
+                <img src="images/villa7.jpg" alt="Premium Villa">
+                <h3>Premium Villa - Delhi</h3>
+                <p>5 Bedrooms | 4 Bathrooms</p>
+                <p>3200 sqft</p>
+                <button onclick="toggleInfo('v7')">More Info</button>
+                <div class="more-info" id="v7">
+                    <p>Price: ₹6 Crore</p>
+                    <p>3 Parking</p>
+                    <p>Fully Furnished</p>
+                    <p>Garden Area</p>
+                </div>
+            </div>
+
+            <!-- Card 8 -->
+            <div class="property-card">
+                <img src="images/villa8.jpg" alt="Elite Villa">
+                <h3>Elite Villa - Hyderabad</h3>
+                <p>4 Bedrooms | 3 Bathrooms</p>
+                <p>2700 sqft</p>
+                <button onclick="toggleInfo('v8')">More Info</button>
+                <div class="more-info" id="v8">
+                    <p>Price: ₹3.9 Crore</p>
+                    <p>Pool</p>
+                    <p>Parking</p>
+                    <p>Premium Design</p>
+                </div>
+            </div>
+
+            <!-- Card 9 -->
+            <div class="property-card">
+                <img src="images/villa9.jpg" alt="Grand Villa">
+                <h3>Grand Villa - Chennai</h3>
+                <p>4 Bedrooms | 3 Bathrooms</p>
+                <p>2600 sqft</p>
+                <button onclick="toggleInfo('v9')">More Info</button>
+                <div class="more-info" id="v9">
+                    <p>Price: ₹3.6 Crore</p>
+                    <p>Near Beach</p>
+                    <p>Parking</p>
+                    <p>Luxury Interior</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-column">
+                <h3>Dream Homes</h3>
+                <p>Y🏡 Dream Homes Find your dream home with us. Buy • Sell • Rent Trusted by thousands of happy customers. [Facebook] [Instagram] [LinkedIn] [YouTube]</p>
+            </div>
+
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="properties.html">Properties</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="admin.html">Admin</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="wishlist.html">Wishlist</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Popular Cities</h4>
+                <ul>
+                    <li><a href="apartment.html">🏢 Apartments</a></li>
+                    <li><a href="villa.html">🏡 Villas</a></li>
+                    <li><a href="family.html">🏠 Family Homes</a></li>
+
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Contact Us</h4>
+                📍 Pune, Maharashtra 📞 +91 9876543210 ✉ support@dreamhomes.com 🕒 Mon - Sat 9:00 AM - 7:00 PM
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Dream Homes | All Rights Reserved Privacy Policy | Terms & Conditions</p>
+        </div>
+
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

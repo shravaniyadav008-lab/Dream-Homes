@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Properties - Dream Homes</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Dream Homes</h1>
+
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="properties.html">Properties</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="admin.html" class="active">Admin</a>
+            <a href="wishlist.html">❤️</a>
+            <a href="login.html" class="nav-btn login-btn">Login</a>
+            <a href="register.html" class="nav-btn register-btn">Register</a>
+        </nav>
+
+    </header>
+
+    <!-- Property Categories -->
+
+    <section class="properties">
+
+        <h2>Property Categories</h2>
+
+        <div class="property-container">
+
+            <div class="property-card">
+
+                <h3>🏡 Luxury Villas</h3>
+
+                <p>
+                    Premium villas with garden, parking & luxury interiors.
+                </p>
+
+                <a href="villa.html">
+                    <button class="view-btn">
+                        View Villas
+                    </button>
+                </a>
+
+            </div>
+
+            <div class="property-card">
+
+                <h3>🏢 Modern Apartments</h3>
+
+                <p>
+                    Affordable & premium apartments in prime cities.
+                </p>
+
+                <a href="apartment.html">
+                    <button class="view-btn">
+                        View Apartments
+                    </button>
+                </a>
+
+            </div>
+
+            <div class="property-card">
+
+                <h3>🏠 Family Homes</h3>
+
+                <p>
+                    Perfect homes for families with comfort & space.
+                </p>
+
+                <a href="family.html">
+                    <button class="view-btn">
+                        View Homes
+                    </button>
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- SEARCH + FILTER -->
+
+    <section class="properties">
+
+        <h2>Search Properties</h2>
+
+        <div class="search-filter">
+
+            <input type="text" id="searchInput" placeholder="Search by Location...">
+
+            <select id="categoryFilter">
+
+                <option value="">All Categories</option>
+
+                <option value="Villa">Villa</option>
+
+                <option value="Apartment">Apartment</option>
+
+                <option value="Family Home">Family Home</option>
+
+            </select>
+
+        </div>
+
+    </section>
+
+    <!-- MongoDB Dynamic Properties -->
+
+    <section class="properties">
+
+        <h2>Available Properties</h2>
+
+        <div class="property-container" id="propertyContainer">
+
+        </div>
+
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-column">
+                <h3>Dream Homes</h3>
+                <p>Y🏡 Dream Homes Find your dream home with us. Buy • Sell • Rent Trusted by thousands of happy customers. [Facebook] [Instagram] [LinkedIn] [YouTube]</p>
+            </div>
+
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="properties.html">Properties</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="admin.html">Admin</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="wishlist.html">Wishlist</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Popular Cities</h4>
+                <ul>
+                    <li><a href="apartment.html">🏢 Apartments</a></li>
+                    <li><a href="villa.html">🏡 Villas</a></li>
+                    <li><a href="family.html">🏠 Family Homes</a></li>
+
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Contact Us</h4>
+                📍 Pune, Maharashtra 📞 +91 9876543210 ✉ support@dreamhomes.com 🕒 Mon - Sat 9:00 AM - 7:00 PM
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Dream Homes | All Rights Reserved Privacy Policy | Terms & Conditions</p>
+        </div>
+
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

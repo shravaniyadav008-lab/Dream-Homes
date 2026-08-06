@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel | Dream Homes</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+
+        <h2>Dream Homes</h2>
+
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="properties.html">Properties</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="admin.html" class="active">Admin</a>
+            <a href="wishlist.html">❤️</a>
+            <a href="login.html" class="nav-btn login-btn">Login</a>
+            <a href="register.html" class="nav-btn register-btn">Register</a>
+        </nav>
+
+    </header>
+
+
+
+    <!-- ADMIN SECTION -->
+
+    <section class="admin-section">
+
+        <h2>Admin Panel</h2>
+
+        <form id="propertyForm" class="admin-form">
+
+            <input type="text" id="title" placeholder="Property Title" required>
+
+            <input type="number" id="price" placeholder="Price" required>
+
+            <input type="text" id="location" placeholder="Location" required>
+
+            <select id="category" required>
+
+    <option value="">Select Category</option>
+
+    <option value="Apartment">Apartment</option>
+
+    <option value="Villa">Villa</option>
+
+    <option value="Family Home">Family Home</option>
+
+</select>
+            <input type="number" id="bedrooms" placeholder="Bedrooms" required>
+
+            <input type="number" id="bathrooms" placeholder="Bathrooms" required>
+
+            <input type="text" id="area" placeholder="Area (example: 2500 sqft)" required>
+            <input type="text" id="image" placeholder="Image Name (example: house1.jpg)" required>
+
+            <textarea id="description" rows="5" placeholder="Description" required></textarea>
+            <input type="text" id="map" placeholder="Google Map Embed URL">
+
+            <button type="submit">
+
+                Add Property
+
+            </button>
+
+        </form>
+
+
+
+        <h2>All Properties</h2>
+
+        <div id="adminPropertyContainer" class="admin-properties">
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-column">
+                <h3>Dream Homes</h3>
+                <p>Y🏡 Dream Homes Find your dream home with us. Buy • Sell • Rent Trusted by thousands of happy customers. [Facebook] [Instagram] [LinkedIn] [YouTube]</p>
+            </div>
+
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="properties.html">Properties</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="admin.html">Admin</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="wishlist.html">Wishlist</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Popular Cities</h4>
+                <ul>
+                    <li><a href="apartment.html">🏢 Apartments</a></li>
+                    <li><a href="villa.html">🏡 Villas</a></li>
+                    <li><a href="family.html">🏠 Family Homes</a></li>
+
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Contact Us</h4>
+                📍 Pune, Maharashtra 📞 +91 9876543210 ✉ support@dreamhomes.com 🕒 Mon - Sat 9:00 AM - 7:00 PM
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Dream Homes | All Rights Reserved Privacy Policy | Terms & Conditions</p>
+        </div>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

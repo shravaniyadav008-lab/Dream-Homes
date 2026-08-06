@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Dream Homes</title>
+
+    <style>
+        /* ======================
+   GLOBAL
+====================== */
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            line-height: 1.6;
+        }
+        /* ======================
+   HEADER
+====================== */
+        
+        header {
+            background: #2c3e50;
+            color: white;
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        header a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        
+        nav a.active {
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+        }
+        /* NAV BUTTONS */
+        
+        .nav-btn {
+            padding: 8px 15px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        
+        .login-btn {
+            background: #fff;
+            color: #333;
+            border: 1px solid #333;
+        }
+        
+        .login-btn:hover {
+            background: #333;
+            color: #fff;
+        }
+        
+        .register-btn {
+            background: #ff9800;
+            color: #fff;
+        }
+        
+        .register-btn:hover {
+            background: #e68900;
+        }
+        /* ===== HERO ===== */
+        
+        .contact-hero {
+            height: 50vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1560518883-ce09059eeffa') center/cover no-repeat;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            text-align: center;
+        }
+        
+        .contact-hero h2 {
+            font-size: 38px;
+            margin-bottom: 10px;
+        }
+        /* ===== CONTACT SECTION ===== */
+        
+        .contact-container {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            padding: 60px 10%;
+            flex-wrap: wrap;
+        }
+        /* FORM */
+        
+        .contact-form {
+            background: #fff;
+            padding: 30px;
+            width: 450px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .contact-form h3 {
+            margin-bottom: 20px;
+        }
+        
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            border-color: #00c6ff;
+            outline: none;
+        }
+        
+        .contact-form button {
+            width: 100%;
+            padding: 12px;
+            background: #00c6ff;
+            border: none;
+            color: #fff;
+            font-size: 15px;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        
+        .contact-form button:hover {
+            background: #0072ff;
+        }
+        /* INFO SECTION */
+        
+        .contact-info {
+            width: 350px;
+        }
+        
+        .contact-info h3 {
+            margin-bottom: 20px;
+        }
+        
+        .info-box {
+            background: #fff;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+        /* MAP */
+        
+        .map-section {
+            margin-top: 30px;
+        }
+        /* FOOTER */
+        
+        footer {
+            background: #111;
+            color: #aaa;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+        /* RESPONSIVE */
+        
+        @media(max-width:768px) {
+            .contact-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .contact-form,
+            .contact-info {
+                width: 100%;
+            }
+            .contact-hero h2 {
+                font-size: 26px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Dream Homes</h1>
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="properties.html">Properties</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="admin.html" class="active">Admin</a>
+            <a href="wishlist.html">❤️</a>
+            <a href="login.html" class="nav-btn login-btn">Login</a>
+            <a href="register.html" class="nav-btn register-btn">Register</a>
+        </nav>
+    </header>
+
+    <section class="contact-hero">
+        <h2>Get In Touch With Us</h2>
+        <p>We are here to help you find your dream property</p>
+    </section>
+
+    <section class="contact-container">
+
+        <div class="contact-form">
+            <h3>Send Us a Message</h3>
+            <form id="contactForm">
+
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+                <input type="tel" id="phone" name="phone" placeholder="Phone Number">
+
+                <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+
+                <button type="submit">
+        Send Message
+    </button>
+
+            </form>
+        </div>
+
+        <div class="contact-info">
+            <h3>Contact Information</h3>
+
+            <div class="info-box">
+                <h4>📍 Office Address</h4>
+                <p>Mumbai, Maharashtra, India</p>
+            </div>
+
+            <div class="info-box">
+                <h4>📞 Phone</h4>
+                <p>+91 9876543210</p>
+            </div>
+
+            <div class="info-box">
+                <h4>📧 Email</h4>
+                <p>info@dreamhomes.com</p>
+            </div>
+
+            <div class="info-box">
+                <h4>⏰ Working Hours</h4>
+                <p>Mon - Sat : 9:00 AM - 7:00 PM</p>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="map-section">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7618.762845797568!2d74.36053554103613!3d17.29713643429874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc17b062be87831%3A0x1f4e7082aae4bc98!2sKadepur%2C%20Maharashtra%20415305!5e0!3m2!1sen!2sin!4v1772304355637!5m2!1sen!2sin"
+            width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+    </section>
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
