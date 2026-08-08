@@ -1,6 +1,7 @@
 // =========================
 // UTILITY & INTERACTION HELPERS
 // =========================
+const API_URL = "https://dream-homes-backend-14pp.onrender.com";
 
 function viewDetails(id) {
 
@@ -55,7 +56,7 @@ function escapeHTML(str) {
 async function loadProperties() {
     try {
 
-        const response = await fetch("http://localhost:5001/api/property");
+        const response = await fetch("${API_URL}/api/property");
 
         if (!response.ok) {
             throw new Error("Failed to fetch properties");
@@ -191,7 +192,7 @@ async function editProperty(id) {
     editId = id;
 
     try {
-        const response = await fetch(`http://localhost:5001/api/property/${id}`);
+        const response = await fetch(`${API_URL}/api/property/${id}`);
         if (!response.ok) throw new Error("Failed to fetch property details");
 
         const property = await response.json();
@@ -273,7 +274,7 @@ document.addEventListener("DOMContentLoaded", function() {
             };
 
             try {
-                const response = await fetch("http://localhost:5001/api/users/login", {
+                const response = await fetch("${API_URL}/api/users/login", {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify(loginData)
@@ -313,7 +314,7 @@ document.addEventListener("DOMContentLoaded", function() {
             };
 
             try {
-                const response = await fetch("http://localhost:5001/api/users/register", {
+                const response = await fetch("${API_URL}/api/users/register", {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify(userData)
@@ -351,7 +352,7 @@ document.addEventListener("DOMContentLoaded", function() {
             };
 
             try {
-                const response = await fetch("http://localhost:5001/api/contact", {
+                const response = await fetch("${API_URL}/api/contact", {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify(formData)
@@ -398,8 +399,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
             try {
                 const url = editId ?
-                    `http://localhost:5001/api/property/${editId}` :
-                    "http://localhost:5001/api/property";
+                    `${API_URL}/api/property/${editId}` :
+                    "${API_URL}/api/property";
 
                 const response = await fetch(url, {
                     method: editId ? "PUT" : "POST",
@@ -469,7 +470,7 @@ async function deleteProperty(id) {
     try {
 
         const response = await fetch(
-            `http://localhost:5001/api/property/${id}`, {
+            `${API_URL}/api/property/${id}`, {
                 method: "DELETE",
                 headers: {
                     "Authorization": `Bearer ${token}`
@@ -515,7 +516,7 @@ async function loadPropertyDetails() {
 
     try {
 
-        const response = await fetch(`http://localhost:5001/api/property/${id}`);
+        const response = await fetch(`${API_URL}/api/property/${id}`);
 
         const property = await response.json();
 
@@ -597,7 +598,7 @@ async function loadPropertyDetails() {
 
     try {
 
-        const response = await fetch(`http://localhost:5001/api/property/${id}`);
+        const response = await fetch(`${API_URL}/api/property/${id}`);
 
         const property = await response.json();
 
@@ -657,7 +658,7 @@ async function loadPropertyDetails() {
 
     try {
 
-        const response = await fetch(`http://localhost:5001/api/property/${id}`);
+        const response = await fetch(`${API_URL}/api/property/${id}`);
 
         const property = await response.json();
 
@@ -788,7 +789,7 @@ async function loadPropertyDetails() {
         // LOAD RELATED PROPERTIES
         // ===========================
 
-        const relatedResponse = await fetch("http://localhost:5001/api/property");
+        const relatedResponse = await fetch("${API_URL}/api/property");
 
         const allProperties = await relatedResponse.json();
 
@@ -845,7 +846,7 @@ async function loadWishlist() {
 
     try {
 
-        const response = await fetch("http://localhost:5001/api/property");
+        const response = await fetch("${API_URL}/api/property");
         const properties = await response.json();
 
         const wishlistProperties = properties.filter(property =>
