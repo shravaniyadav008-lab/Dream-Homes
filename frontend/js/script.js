@@ -743,7 +743,7 @@ async function loadPropertyDetails() {
 
         <nav>
             <a href="index.html" class="active">Home</a>
-            <a href="properties.html">Properties</a>
+            <a href="Properties.html">Properties</a>
             <a href="About.html">About</a>
             <a href="Contact.html">Contact</a>
             <a href="admin.html" class="active">Admin</a>
