@@ -56,7 +56,7 @@ function escapeHTML(str) {
 async function loadProperties() {
     try {
 
-        const response = await fetch("${API_URL}/api/property");
+        const response = await fetch(`${API_URL}/api/property`);
 
         if (!response.ok) {
             throw new Error("Failed to fetch properties");
@@ -192,7 +192,7 @@ async function editProperty(id) {
     editId = id;
 
     try {
-        const response = await fetch(`${API_URL}/api/property/${id}`);
+        const response = await fetch(`${API_URL}/api/property`);
         if (!response.ok) throw new Error("Failed to fetch property details");
 
         const property = await response.json();
@@ -274,7 +274,7 @@ document.addEventListener("DOMContentLoaded", function() {
             };
 
             try {
-                const response = await fetch("${API_URL}/api/users/login", {
+                const response = await fetch(`${API_URL}/api/users/login`, {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify(loginData)
@@ -314,7 +314,7 @@ document.addEventListener("DOMContentLoaded", function() {
             };
 
             try {
-                const response = await fetch("${API_URL}/api/users/register", {
+                const response = await fetch(`${API_URL}/api/users/register`, {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify(userData)
@@ -352,7 +352,7 @@ document.addEventListener("DOMContentLoaded", function() {
             };
 
             try {
-                const response = await fetch("${API_URL}/api/contact", {
+                const response = await fetch(`${API_URL}/api/contact`, {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify(formData)
@@ -789,7 +789,7 @@ async function loadPropertyDetails() {
         // LOAD RELATED PROPERTIES
         // ===========================
 
-        const relatedResponse = await fetch("${API_URL}/api/property");
+        const relatedResponse = await fetch(`${API_URL}/api/property`);
 
         const allProperties = await relatedResponse.json();
 
@@ -846,7 +846,7 @@ async function loadWishlist() {
 
     try {
 
-        const response = await fetch("${API_URL}/api/property");
+        const response = await fetch(`${API_URL}/api/property`);
         const properties = await response.json();
 
         const wishlistProperties = properties.filter(property =>
