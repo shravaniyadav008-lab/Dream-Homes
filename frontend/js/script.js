@@ -1,7 +1,7 @@
 // =========================
 // UTILITY & INTERACTION HELPERS
 // =========================
-const API_URL = "https://dream-homes-backend-14pp.onrender.com";
+const API_URL = "https://dream-homes-backend-9kq6.onrender.com";
 
 function viewDetails(id) {
 
